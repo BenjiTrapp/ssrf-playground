@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>SSRF - Basics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h2>Hello Friend!</h2>
+					<p>This site is definitely not vulnerable to SSRF attacks as described <a href="https://portswigger.net/web-security/ssrf">HERE</a></p>
+			    	<p>As experienced Monkey Ops we placed our secret in a well protected area (/etc/flag.txt)
+					<p>Please leave it alone there! Also don't look for other flaws PROMISED?</p>
+        </div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Banner -->
+					<section id="intro" class="main">
+						<span class="icon fa-rocket major"></span>
+						<h2>Outgoing Webhook</h2>
+						<p>To make things a little bit easier <strong>our external company</strong> invented this amazing WebHook feature!</p>
+                        <p>We will send updates to your app whenever an event happens. You can test your Webhook handler here; The response will appear below.</p>
+                      <form id="hook" action="testhook.php">
+                        <p>
+                          <input type="text" name="handler" placeholder="https://yourhandler.io/events" style="width:100%" />
+                        </p>
+						<ul class="actions">
+                            <li><input type="submit" class="button big" value="Test it!" /></li>
+						</ul>
+                      </form>
+					</section>
+              
+					<section id="intro" class="main">
+						<span class="icon fa-eye major"></span>
+						<h2>See your result:</h2>
+						<p id="result" style="overflow: auto;max-height: 600px;white-space: pre-line;">Check how your handler responded; The result of your test will appear here as long as our excel file could understand it</p>
+					</section>
+
+				<!-- Footer -->
+				<p>Social Media are awesome swag:</p>
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
