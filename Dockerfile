@@ -7,4 +7,4 @@ COPY www/ /var/www/html/
 RUN  echo "axactf{w3lcom3_t0_th3_jungl3}" >> /etc/flag.txt
 
 CMD ["apachectl", "-D", "FOREGROUND"]
-EXPOSE 80 443
+EXPOSE 8080 8443
