@@ -1,8 +1,10 @@
 [![Docker](https://github.com/BenjiTrapp/ssrf-playground/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/BenjiTrapp/ssrf-playground/actions/workflows/docker-publish.yml)
 
-# ssrf-playground
+![](www/static/tag.png)
 
-<img height="200" align="left" src="www/static/evilmonkey.png" > <br><br><br>Use this tiny playground to get more intouch with SSRF. This Challenge is thought to be part of a CTF Event and works fine in combination with CTFd or Facebooks CTF Framework. During your campaign this [SSRF Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) might help you.
+<br><br>
+<img height="200" align="left" src="www/static/evilmonkey.png" > <br>Use this tiny playground to get more intouch with SSRF. This Challenge is thought to be part of a CTF Event and works fine in combination with CTFd or Facebooks CTF Framework. During your campaign this [SSRF Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) might help you.
+<br><br>
 <br><br>
 <br><br>
 
