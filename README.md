@@ -24,3 +24,6 @@ make all
 ### Still under construction
 
 some more flags will be added later. This app is broken by design so be careful what you do with it and where you deploy it! IN near future this app will use a mocked Metadata Service from AWS and be combined with Localstack to go some steps further.
+
+### Now some words of warning and disclaimer: 
+I'm not responsible for any harm caused by this CTF challenge. Do not deploy in productio and sandbox the Container since it's intentionally broken by design. 
