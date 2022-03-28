@@ -3,11 +3,19 @@
 ![](www/static/tag.png)
 
 <br><br>
+
 <img height="200" align="left" src="www/static/evilmonkey.png" > <br>Use this tiny playground to get intouch with SSRF (Server Side Request Forgery) and learn some common ways to pwn things with such a vulnerability. This Challenge is thought to be used as a challenge in a CTF Event and works fine in combination with Frameworks like [CTFd](https://github.com/BenjiTrapp/CTFd-helm-chart) or Facebooks CTF Framework. During your campaign this [SSRF Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) might help you. This Challenge contains three hidden flags. 
 <br><br>
 <br><br>
 <br><br>
+**Content:**
+* [Let's discuss your Mission](https://github.com/BenjiTrapp/ssrf-playground#lets-discuss-your-mission)
+* [Solution and lessons learned](https://github.com/BenjiTrapp/ssrf-playground#solution-and-lessons-learned)
+* [How to get started](https://github.com/BenjiTrapp/ssrf-playground#how-to-get-started)
+* [Now some words of warning and disclaimer](https://github.com/BenjiTrapp/ssrf-playground#now-some-words-of-warning-and-disclaimer)
+* [It's Dangerous to walk alone - take this!](https://github.com/BenjiTrapp/ssrf-playground#its-dangerous-to-walk-alone---take-this)
 
+---
 ### Let's discuss your Mission
 Docker containers have a lot of pitfalls, depending on the environment the container runs. This Image is build as a jack of all trades so you have multiple opportunities to learn from common mistakes. Make things polyglot means triple the fun :goberserk:
 
