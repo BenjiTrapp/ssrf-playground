@@ -83,9 +83,9 @@ The incident affected:
 * 140.000 Social Security numbers
 * 1 million Social Insurance numbers for Canadian credit card customers
 
-The Attacker Paige A. Thompson, former Capital One and Amazon Inc employee (here is her [CV](https://gitlab.com/netcrave/Resume/blob/master/cv/experience.tex) doxed herself by bragging on Twitter. 
+The Attacker: Paige A. Thompson, former Capital One and Amazon Inc employee (here is her [CV](https://gitlab.com/netcrave/Resume/blob/master/cv/experience.tex)) who doxed herself by bragging on Twitter. 
 
-The hackitself was performed hidden behind a VPN and from the TOR network and was very sophisticated. She managed it to bypass the WAF (Web Application Firewall) by absuing a SSRF weakness and accessed the IMDSv1 (EC2 Metadata Service) to get access to the AWS Account. 
+The hack itself was performed hidden behind a VPN and from the TOR network. The attack was very sophisticated. She managed it, to bypass the WAF (Web Application Firewall) by absuing a SSRF weakness and accessed the IMDSv1 (EC2 Metadata Service) to get access to the AWS Account. 
 
 <p align=center>
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/8672357/160493361-c18c499a-5a42-4ee5-bec2-c0255291c80e.png">
