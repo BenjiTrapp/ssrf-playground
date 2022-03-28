@@ -3,13 +3,13 @@
 ![](www/static/tag.png)
 
 <br><br>
-<img height="200" align="left" src="www/static/evilmonkey.png" > <br>Use this tiny playground to get more intouch with SSRF and some common ways what to do with such a vulnerability after you found one. This Challenge is thought to be part of a CTF Event and works fine in combination with CTFd or Facebooks CTF Framework. During your campaign this [SSRF Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) might help you. This Challenge contains of three hidden flags. 
+<img height="200" align="left" src="www/static/evilmonkey.png" > <br>Use this tiny playground to get intouch with SSRF (Server Side Request Forgery) and learn some common ways to pwn things with such a vulnerability. This Challenge is thought to be used as a challenge in a CTF Event and works fine in combination with Frameworks like [CTFd](https://github.com/BenjiTrapp/CTFd-helm-chart) or Facebooks CTF Framework. During your campaign this [SSRF Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) might help you. This Challenge contains three hidden flags. 
 <br><br>
 <br><br>
 <br><br>
 
 ### Let's discuss your Mission
-Docker containers have a lot of pitfalls, depending on the environment the container runs. This Image is build as a jack of all trades so you have multiple opportunities to learn from common mistakes.
+Docker containers have a lot of pitfalls, depending on the environment the container runs. This Image is build as a jack of all trades so you have multiple opportunities to learn from common mistakes. Make things polyglot means triple the fun :goberserk:
 
 **You will learn how to**:
 1. Retrieve valueable which is stored in a file
@@ -49,8 +49,10 @@ $ make build
 ##### What is Server Side Request Forgery (SSRF)?
 > Allows an attacker to send malicous requests to an arbitrary domain of the attacker‘s choosing by abusing a vulnerable web server
 
+<p align=center>
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/8672357/160492625-2752e5ea-6d19-4d0b-b399-332d275395b4.png">
-
+</p>
+  
 The visualization above shows, that a gibberish web server can be tricked to either access files, API etc which resides on the same location or access different other ressources somewhere in the background or surrounding environment
 
 ##### SSRF is used for
@@ -77,7 +79,9 @@ The Attacker Paige A. Thompson, former Capital One and Amazon Inc employee (here
 
 The hackitself was performed hidden behind a VPN and from the TOR network and was very sophisticated. She managed it to bypass the WAF (Web Application Firewall) by absuing a SSRF weakness and accessed the IMDSv1 (EC2 Metadata Service) to get access to the AWS Account. 
 
+<p align=center>
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/8672357/160493361-c18c499a-5a42-4ee5-bec2-c0255291c80e.png">
+</p>
 
 Since this kind of attack really happened in the wild - this challenge should teach you how this attack was performed and enhance it by absuing Kubernetes/OpenShift the same way. Have fun and enjoy - by the way don't forget to take a look at the `/exploit/SOLUTION.md` to also learn about how to mitigate the things you learned.
 
