@@ -8,8 +8,10 @@
 <br><br>
 <br><br>
 
-### Your Mission
-You will learn how to:
+### Now to the Mission
+Docker containers have a lot of pitfalls, depending on the environment the container runs. This Image is build as a jack of all trades so you have multiple opportunities to learn from common mistakes.
+
+**You will learn how to**:
 1. Retrieve valueable which is stored in a file
 2. Access kubernetes ServiceAccountToken (startingpoint to takeover a running Pod in k8s)
 3. Hijack an AWS Account by raiding the EC2 metadata. The admin moved the regular IP `http://169.254.169.254` to `localhost:1338` - but there is no security by obscurity. 
