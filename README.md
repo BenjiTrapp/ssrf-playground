@@ -3,10 +3,16 @@
 ![](www/static/tag.png)
 
 <br><br>
-<img height="200" align="left" src="www/static/evilmonkey.png" > <br>Use this tiny playground to get more intouch with SSRF and some common ways what to do with such a vulnerability after you found one. This Challenge is thought to be part of a CTF Event and works fine in combination with CTFd or Facebooks CTF Framework. During your campaign this [SSRF Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) might help you. This Challenge contains of three hidden flags. You will learn how to get retrieve valueable which is stored in a file, kubernetes secrets and hijack an AWS Account by raiding the EC2 metadata. The admin moved the regular IP `http://169.254.169.254` to `localhost:1338` - but there is no security by obscurity. 
+<img height="200" align="left" src="www/static/evilmonkey.png" > <br>Use this tiny playground to get more intouch with SSRF and some common ways what to do with such a vulnerability after you found one. This Challenge is thought to be part of a CTF Event and works fine in combination with CTFd or Facebooks CTF Framework. During your campaign this [SSRF Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) might help you. This Challenge contains of three hidden flags. 
 <br><br>
 <br><br>
 <br><br>
+
+### Your Mission
+You will learn how to:
+1. Retrieve valueable which is stored in a file
+2. Access kubernetes ServiceAccountToken (startingpoint to takeover a running Pod in k8s)
+3. Hijack an AWS Account by raiding the EC2 metadata. The admin moved the regular IP `http://169.254.169.254` to `localhost:1338` - but there is no security by obscurity. 
 
 ### How to get started
 The easiest way is to use the prebuild Docker image and spin the docker container up like usual: 
