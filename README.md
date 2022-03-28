@@ -42,4 +42,42 @@ $ make build
 
 
 ### Now some words of warning and disclaimer: 
-> I'm not responsible for any harm caused by this CTF challenge. Do not deploy in productio and sandbox the Container since it's intentionally broken by design. 
+> I'm not responsible for any harm caused by this CTF challenge. Do not deploy in productio and sandbox the Container since it's intentionally broken by design.
+
+### It's Dangerous to walk alone - take this!
+
+##### What is Server Side Request Forgery (SSRF)?
+> Allows an attacker to send malicous requests to an arbitrary domain of the attacker‘s choosing by abusing a vulnerable web server
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/8672357/160492625-2752e5ea-6d19-4d0b-b399-332d275395b4.png">
+
+The visualization above shows, that a gibberish web server can be tricked to either access files, API etc which resides on the same location or access different other ressources somewhere in the background or surrounding environment
+
+##### SSRF is used for
+Targeting internal systems behind a WAF (Web Application Firewall)
+* Reach out for systems that are normally unreachable for an attacker from the external network 
+* Access and interact with the Server if the Server is listening on the loopback interface address (127.0.0.1/localhost)
+* Bypassing Whitelisting, Host-based authentication services and WAFs => Who can be trusted?
+* Internal Scan for Server, other broken Server/Protocols 
+* …and many more nasty things
+
+##### Did you heared already how Capital One got hacked?
+[Here](https://www.justice.gov/usao-wdwa/press-release/file/1188626/download) you can read the official investigations documents by the US Government about the breach. This story is quite worth to read.
+
+**Details of the breach**:  A Hacker downloaded 30 GB of Capital One credit application data from a rented cloud data Server
+
+The incident affected:
+* 100 million US people
+* 6 million Canadian
+* 80.000 bank account numbers
+* 140.000 Social Security numbers
+* 1 million Social Insurance numbers for Canadian credit card customers
+
+The Attacker Paige A. Thompson, former Capital One and Amazon Inc employee (here is her [CV](https://gitlab.com/netcrave/Resume/blob/master/cv/experience.tex) doxed herself by bragging on Twitter. 
+
+The hackitself was performed hidden behind a VPN and from the TOR network and was very sophisticated. She managed it to bypass the WAF (Web Application Firewall) by absuing a SSRF weakness and accessed the IMDSv1 (EC2 Metadata Service) to get access to the AWS Account. 
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/8672357/160493361-c18c499a-5a42-4ee5-bec2-c0255291c80e.png">
+
+Since this kind of attack really happened in the wild - this challenge should teach you how this attack was performed and enhance it by absuing Kubernetes/OpenShift the same way. Have fun and enjoy - by the way don't forget to take a look at the `/exploit/SOLUTION.md` to also learn about how to mitigate the things you learned.
+
