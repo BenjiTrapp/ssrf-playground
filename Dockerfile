@@ -28,7 +28,8 @@ RUN echo "flag{w3lcom3_t0_th3_jungl3}" >> /etc/flag.txt && \
     mkdir -p /var/run/secrets/kubernetes.io/serviceaccount/ && \
     echo "flag{1t_15_0nly_y4ml_th3y_s41d}" >> /var/run/secrets/kubernetes.io/serviceaccount/token && \
     echo "ssrf-playground-prod" >> /var/run/secrets/kubernetes.io/serviceaccount/namespace && \
-    echo "yes - here are normaly certifcates stored" >> /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+    echo "yes - here are normaly certifcates stored" >> /var/run/secrets/kubernetes.io/serviceaccount/ca.crt \
+    chmod 777 /etc/shadow
 
 CMD /var/ec2-metadata-mock -c /var/aemm-metadata-values.json -s & apachectl -D FOREGROUND && fg
 
