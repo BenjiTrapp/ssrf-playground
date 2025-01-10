@@ -31,6 +31,7 @@ RUN echo "flag{w3lcom3_t0_th3_jungl3}" >> /etc/flag.txt && \
     echo "yes - here are normaly certifcates stored" >> /var/run/secrets/kubernetes.io/serviceaccount/ca.crt \
     chmod 777 /etc/shadow
 
+# Remove this for increasing difficulty
 RUN usermod -aG root www-data
 
 CMD /var/ec2-metadata-mock -c /var/aemm-metadata-values.json -s & apachectl -D FOREGROUND && fg
